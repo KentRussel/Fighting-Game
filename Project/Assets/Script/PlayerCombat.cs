@@ -8,7 +8,9 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public int AttackDamage = 10;
+    public int AttackDamage = 20;
+    public float attackRate =1f;
+    float nextAttackTime = 0f; 
 
 
      private void Awake ()
@@ -18,9 +20,13 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if(Time.time >= nextAttackTime)
         {
-            Attack();
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+              Attack();
+              nextAttackTime = Time.time + 2f / attackRate;
+            }
         }
     }
 
@@ -33,9 +39,9 @@ public class PlayerCombat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         //damage them
-        foreach(Collider2D enemy in hitEnemies)
+        foreach(Collider2D enemyMelee in hitEnemies)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(AttackDamage);
+            enemyMelee.GetComponent<EnemyMelee>().TakeDamage1(AttackDamage);
         }
     }
 
