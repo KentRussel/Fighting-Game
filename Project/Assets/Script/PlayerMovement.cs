@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
+        
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {

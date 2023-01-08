@@ -49,7 +49,6 @@ public class EnemyMelee : MonoBehaviour
     {
         Debug.Log("Enemy died!");
         anim.SetTrigger("die");
-        new WaitForSeconds(5f);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }
