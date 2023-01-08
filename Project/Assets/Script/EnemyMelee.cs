@@ -45,11 +45,11 @@ public class EnemyMelee : MonoBehaviour
             Die();
         }
     }
-
     void Die()
     {
         Debug.Log("Enemy died!");
         anim.SetTrigger("die");
+        new WaitForSeconds(5f);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }
@@ -100,9 +100,6 @@ public class EnemyMelee : MonoBehaviour
             playerHealth.TakeDamage(damage);
         }
     }
-
-
-
 }
 
 

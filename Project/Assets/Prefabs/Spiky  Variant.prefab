@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1245097852814202009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.4710793
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.49165022
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208014, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208017, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1666091be7340f64c8ca82ae7568fe7d, type: 3}
+    - target: {fileID: 2056088561193208017, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056088561193208018, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: m_Name
+      value: 'Spiky '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: range
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: maxHealth
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: boxCollider
+      value: 
+      objectReference: {fileID: 995234225902705738}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: attackCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111065917444832754, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+--- !u!61 &995234225902705738 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2056088561193208019, guid: 367bf81d885133e49a6e90c8b8b13a50, type: 3}
+  m_PrefabInstance: {fileID: 1245097852814202009}
+  m_PrefabAsset: {fileID: 0}

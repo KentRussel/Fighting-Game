@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public int AttackDamage = 20;
-    public float attackRate =1f;
+    public float attackRate = 1f;
     float nextAttackTime = 0f; 
 
 
